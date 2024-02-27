@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #444444;
+}
+
+.container {
+    max-width: 800px;
+    /* margin: 5% 0 0 30%; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.textarea-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#texto {
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+/* -- */
+
+.btn-container {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button#next:enabled,
+button#reintentar:enabled {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button#next:disabled {
+    background-color: #A9A9A9;
+    cursor: not-allowed;
+}
+
+/* -- */
+.incorrecto {
+    color: red;
+    font-weight: bold;
+}
+
+#mensaje {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilos teclado */
+
+.parcial-key-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard-container {
+    padding-top: 2%;
+    justify-content: space-around;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.key {
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.key:hover {
+    background-color: #ccc;
+}
+
+.wide {
+    flex-grow: 2;
+}
+
+.key-pressed {
+    background-color: lightblue;
+}
